@@ -1,0 +1,18 @@
+1.First, I predicted the "Store_Name" for "Pinginformation" dataframe by:-
+(a) I trained the Randomforest classifier by taking features as "Floor", "longitude"
+    and "latitude" and labels as "Store_Name" from storemapping dataframe.
+(b) Predicted the "Store_Name" as labels on pinginformation dataframe by taking "Floor", 
+    "longitude" and "latitude" as testing features from pinginformation dataframe for every
+    corresponding "Shopper_ID".
+(c) Took the most frequent occuring value (Mode) of "Store_Name" for every corresponding
+    "Shopper_ID".
+2.Second, I predicted the "Store_Category_Visited" for "Pinginformation" dataframe by:-
+(a) I mapped the "Store_Category_Name" for storemapping dataframe by using Categorymapping
+    dataframe for corresponding "Store_Name".
+(b) Trained the Support Vector Machine classifier by taking features as "Floor", "longitude"
+    and "latitude" and labels as "Store_Category" from storemapping dataframe.
+(c) Predicted the "Store_Category" as labels on pinginformation dataframe by taking "Floor", 
+    "longitude" and "latitude" as testing features from pinginformation dataframe for every
+    corresponding "Shopper_ID".
+(d) Took the most frequent occuring value (Mode) of "Store_Category" for every corresponding
+    "Shopper_ID".
